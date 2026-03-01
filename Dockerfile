@@ -25,6 +25,7 @@ RUN apt-get update && apt-get install -y \
     && rm -rf /var/lib/apt/lists/*
 
 # Menyalin file konfigurasi dependensi Python
+# Force cache invalidation for pip install, updated: 2026-03-02
 COPY requirements.txt .
 
 # Menginstal library Python
